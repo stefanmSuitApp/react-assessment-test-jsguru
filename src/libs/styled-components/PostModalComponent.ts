@@ -31,12 +31,18 @@ export const PostModalTitle = styled.span`
 `;
 
 export const PostModalBody = styled.div`
+  display: flex;
+  flex-direction: column;
   padding: 20px 0;
   font-size: 1.1rem;
-  border-bottom: lightgrey solid 0.1px;
 `;
 
 export const PostModalCommentSection = styled.div`
   max-height: 480px;
   overflow-y: auto;
+`;
+
+export const PostModalCommentsHeader = styled.div`
+  border-bottom: lightgrey solid 0.1px;
+  font-weight: 500;
 `;

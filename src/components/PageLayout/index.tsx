@@ -5,8 +5,8 @@ import { Header, HeaderProps } from './components/Header';
 import { Content, ContentProps } from './components/Content';
 
 class Layout extends React.Component<{ children: React.ReactNode }> {
-  static Header = ({ logo, navItems }: HeaderProps) => (
-    <Header logo={logo} navItems={navItems} />
+  static Header = ({ logo, navItems, logoPath }: HeaderProps) => (
+    <Header logo={logo} logoPath={logoPath} navItems={navItems} />
   );
   static Content = ({ children, pageLabel }: ContentProps) => (
     <Content pageLabel={pageLabel}>{children}</Content>

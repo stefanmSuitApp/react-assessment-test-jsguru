@@ -12,15 +12,16 @@ import { NavItem } from './components/NavItem';
 export type HeaderProps = {
   logo: string;
   navItems: INavItem[];
+  logoPath: string;
 };
 
-const Header = ({ logo, navItems }: HeaderProps) => {
+const Header = ({ logo, navItems, logoPath }: HeaderProps) => {
   const navigate = useNavigate();
 
   return (
     <ErrorBoundary>
       <HeaderContainer>
-        <Logo src={logo} />
+        <Logo onClick={() => navigate(logoPath)} src={logo} />
         <NavContainer>
           {navItems.map((navItem) => {
             const { name, path } = navItem;

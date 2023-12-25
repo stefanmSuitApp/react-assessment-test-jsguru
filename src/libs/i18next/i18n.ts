@@ -27,7 +27,7 @@ i18n
           showComments: 'Show comments',
           hideComments: 'Hide comments',
           noComments: 'There are no comments on this post',
-          searchByAuthor: 'Search by author',
+          searchByAuthor: 'Search by an author',
           noPosts: 'There are no posts from author named like that',
           noPhotos: 'There are no photos',
           itemsPerPage: 'Items per page',

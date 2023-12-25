@@ -34,7 +34,7 @@ const PageLayout = ({ element: children, pageLabel }: Props) => {
   return (
     <ErrorBoundary>
       <Layout>
-        <Header logo={logo} navItems={navItems} />
+        <Header logo={logo} logoPath="/" navItems={navItems} />
         <Content pageLabel={pageLabel} children={children} />
         <Footer footerText={<FooterText />} />
       </Layout>

@@ -9,6 +9,7 @@ import { SingleComment } from './SingleComment';
 import {
   PostModalBody,
   PostModalCommentSection,
+  PostModalCommentsHeader,
   PostModalContainer,
   PostModalHeader,
   PostModalHeaderText,
@@ -38,6 +39,8 @@ const PostModal = ({ post, comments, icon, isOpen, onClose }: Props) => {
           </PostModalHeader>
           <PostModalTitle>{title}</PostModalTitle>
           <PostModalBody>{body}</PostModalBody>
+          <PostModalCommentsHeader>Comments</PostModalCommentsHeader>
+
           <PostModalCommentSection>
             {comments?.length
               ? comments.map((comment) => (
